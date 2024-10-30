@@ -18,8 +18,8 @@ const trackerScriptName = process.env.TRACKER_SCRIPT_NAME;
 const contentSecurityPolicy = [
   `default-src 'self'`,
   `img-src * data:`,
-  `script-src 'self' 'unsafe-eval' 'unsafe-inline'`,
-  `style-src 'self' 'unsafe-inline'`,
+  `script-src 'self' 'unsafe-eval' 'unsafe-inline' https://fonts.googleapis.com`,
+  `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com`,
   `connect-src 'self' api.umami.is cloud.umami.is`,
   `frame-ancestors 'self' ${frameAncestors}`,
 ];

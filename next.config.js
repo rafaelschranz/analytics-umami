@@ -19,8 +19,8 @@ const contentSecurityPolicy = [
   `default-src 'self'`,
   `img-src * data:`,
   `script-src 'self' 'unsafe-eval' 'unsafe-inline' https://fonts.googleapis.com`,
-  `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
-  `font-src 'self' https://fonts.gstatic.com`,
+  `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`, // Allow Google Fonts CSS
+  `font-src 'self' data: https://fonts.gstatic.com`,               // Allow Google Fonts assets
   `connect-src 'self' api.umami.is cloud.umami.is`,
   `frame-ancestors 'self' ${frameAncestors}`,
 ];

@@ -19,11 +19,12 @@ const contentSecurityPolicy = [
   `default-src 'self'`,
   `img-src * data:`,
   `script-src 'self' 'unsafe-eval' 'unsafe-inline' https://fonts.googleapis.com`,
-  `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`, // Allow Google Fonts CSS
-  `font-src 'self' data: https://fonts.gstatic.com`,               // Allow Google Fonts assets
+  `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com`,
+  `font-src 'self' data: https://fonts.gstatic.com`, 
   `connect-src 'self' api.umami.is cloud.umami.is`,
   `frame-ancestors 'self' ${frameAncestors}`,
 ];
+
 
 const headers = [
   {

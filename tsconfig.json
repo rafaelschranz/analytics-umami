@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["jest"],
     "target": "es2021",
     "outDir": "./build",
     "module": "esnext",

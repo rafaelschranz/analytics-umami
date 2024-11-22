@@ -23,17 +23,12 @@ const contentSecurityPolicy = [
   `img-src * data:`,
   `script-src 'self' 'unsafe-eval' 'unsafe-inline' https://fonts.googleapis.com`,
   `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com`,
-  `font-src 'self' data: https://fonts.gstatic.com`, 
+  `font-src 'self' data: https://fonts.gstatic.com`,
   `connect-src 'self' api.umami.is cloud.umami.is`,
   `frame-ancestors 'self' ${frameAncestors}`,
 ];
 
-<<<<<<< HEAD
-
-const headers = [
-=======
 const defaultHeaders = [
->>>>>>> f9ee18255db86e5e208d79be73e103d16b2a6bd4
   {
     key: 'X-DNS-Prefetch-Control',
     value: 'on',

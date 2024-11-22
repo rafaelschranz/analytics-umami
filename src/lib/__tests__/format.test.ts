@@ -1,7 +1,7 @@
 import * as format from '../format';
 
 test('parseTime', () => {
-  expect(format.parseTime(86400 + 3600 + 60 + 1)).toEqual({
+  expect(format.parseTime(86400 + 3600 + 60 + 1)).equal({
     days: 1,
     hours: 1,
     minutes: 1,

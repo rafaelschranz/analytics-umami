@@ -276,4 +276,8 @@
   "message.viewed-page": "Siite agluegt",
   "message.visitor-log": "Bsuecher us {country} nutzt {browser} uf {os} {device}",
   "message.visitors-dropped-off": "Bsuercher verlore"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f9ee18255db86e5e208d79be73e103d16b2a6bd4
